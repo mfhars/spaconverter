@@ -24,8 +24,8 @@ for spa_file in spa_files:
     dataset = scp.read_omnic(spa_path)
     
     # Assuming the dataset contains a single spectrum, we extract the wavenumber and intensity
-    wavenumbers = dataset.x.data
-    intensities = dataset.data
+    wavenumbers = dataset.x.data.flatten()
+    intensities = dataset.data.flatten()
     
     # Extract the internal OMNIC name
     omnic_name = dataset.name
