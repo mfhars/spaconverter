@@ -4,7 +4,7 @@ import csv
 import os
 
 basepath = 'C:\\Users\\pingk\\Downloads\\coba\\sumber\\'
-output_path = 'C:\\Users\\pingk\\Downloads\\coba\\hasil\\'
+output_path = 'C:\\Users\\pingk\\Downloads\\coba\\hasil\\New Folder\\'
 paths = [str(x) for x in list(pathlib.Path(basepath).rglob('*.spa'))]
 print('Files detected: {}'.format(len(paths)))
 
